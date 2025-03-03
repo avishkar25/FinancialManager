@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Asset>
+@using System.Globalization
+
+@{
+    ViewData["Title"] = "Assets";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Assets</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Value)</th>
+            <th>@Html.DisplayNameFor(model => model.PurchaseDate)</th> <!-- ✅ Fixed Property Name -->
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@item.Value.ToString("C", new CultureInfo("hi-IN"))</td> <!-- ✅ INR Formatting -->
+                <td>@Html.DisplayFor(modelItem => item.PurchaseDate)</td> <!-- ✅ Fixed Property Name -->
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
