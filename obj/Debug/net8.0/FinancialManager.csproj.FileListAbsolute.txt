@@ -275,6 +275,7 @@ C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\Financ
 C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\FinancialManager.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\FinancialManager.RazorAssemblyInfo.cache
 C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\FinancialManager.RazorAssemblyInfo.cs
+C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\FinancialManager.sourcelink.json
 C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\scopedcss\bundle\FinancialManager.styles.css
 C:\Users\avish\Project\FinancialManager\FinancialManager\obj\Debug\net8.0\scopedcss\projectbundle\FinancialManager.bundle.scp.css

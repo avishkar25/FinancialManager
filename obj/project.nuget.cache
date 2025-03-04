@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LsRcVk6mKv0=",
+  "dgSpecHash": "qmT3vX9uJCo=",
   "success": true,
   "projectFilePath": "C:\\Users\\avish\\Project\\FinancialManager\\FinancialManager\\FinancialManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avish\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\avish\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\avish\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\avish\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\avish\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\avish\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

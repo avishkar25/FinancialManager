@@ -39,10 +39,34 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+// ✅ Automatically Redirect Singular URLs to Plural Versions
+app.Use(async (context, next) =>
+{
+    string? path = context.Request.Path.Value;
+
+    if (path?.Equals("/Expense", StringComparison.OrdinalIgnoreCase) == true)
+    {
+        context.Response.Redirect("/Expenses", true);
+        return;
+    }
+    if (path?.Equals("/Debt", StringComparison.OrdinalIgnoreCase) == true)
+    {
+        context.Response.Redirect("/Debts", true);
+        return;
+    }
+    if (path?.Equals("/Asset", StringComparison.OrdinalIgnoreCase) == true)
+    {
+        context.Response.Redirect("/Assets", true);
+        return;
+    }
+
+    await next();
+});
+
 // ✅ Set Default Route to Expenses
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Expenses}/{action=Index}/{id?}"); // 🔥 Now defaults to /Expenses
+    pattern: "{controller=Expenses}/{action=Index}/{id?}");
 
 // ✅ Ensure Identity Razor Pages work (e.g., Login/Register)
 app.MapRazorPages();
